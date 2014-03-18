@@ -221,7 +221,7 @@ class FeedsClient extends mws.Client
       PurgeAndReplace: purgeReplace
     , feedBody
 
-    @invoke req, {method:'POST', headers:{'Content-Type':'text/xml'}}, (res) =>
+    @invoke req, {method:'POST', headers:{'content-type':'text/xml'}}, (res) =>
       # TODO: test and parse
       if typeof cb is 'function' then cb res
 
